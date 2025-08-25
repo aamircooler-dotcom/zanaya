@@ -10,11 +10,6 @@ interface ReligionSelectorProps {
 export function ReligionSelector({ religions, selectedReligion, onSelect }: ReligionSelectorProps) {
   return (
     <div className="w-full max-w-4xl mx-auto">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Choose Your Faith</h2>
-        <p className="text-gray-600">Choose your faith to see appropriate last rites services</p>
-      </div>
-      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {religions.map((religion) => (
           <div
