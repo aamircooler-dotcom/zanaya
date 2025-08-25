@@ -1,5 +1,5 @@
 import React from 'react';
-import { CheckCircle, MessageCircle, Phone, Clock } from 'lucide-react';
+import { CheckCircle, Mail, Phone, Clock } from 'lucide-react';
 
 export function ConfirmationPage() {
   return (
@@ -13,9 +13,9 @@ export function ConfirmationPage() {
         </div>
 
         {/* Success Message */}
-        <h2 className="text-3xl font-bold text-gray-900 mb-4">Booking Submitted Successfully!</h2>
+        <h2 className="text-3xl font-bold text-gray-900 mb-4">Booking Confirmed!</h2>
         <p className="text-gray-600 mb-8 text-lg">
-          Your ZANAYA service request has been sent via WhatsApp. Our compassionate team will contact you shortly to confirm the details and arrange the services.
+          Your ZANAYA service request has been submitted successfully. Our compassionate team will contact you shortly to confirm the details and arrange the services.
         </p>
 
         {/* Contact Information */}
@@ -23,10 +23,10 @@ export function ConfirmationPage() {
           <h3 className="text-xl font-semibold text-gray-900 mb-4">What happens next?</h3>
           <div className="space-y-4 text-left">
             <div className="flex items-start gap-3">
-              <MessageCircle size={20} className="text-blue-600 mt-0.5" />
+              <Mail size={20} className="text-blue-600 mt-0.5" />
               <div>
-                <p className="font-medium text-gray-900">WhatsApp Confirmation</p>
-                <p className="text-gray-600 text-sm">You should see the WhatsApp chat window with your booking details</p>
+                <p className="font-medium text-gray-900">Email Confirmation</p>
+                <p className="text-gray-600 text-sm">Your booking details have been sent to our team automatically</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
